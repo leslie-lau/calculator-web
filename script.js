@@ -22,21 +22,25 @@ for (var ii=0; ii<corrections.length; ii++){
 }
 
 // Bind keyboard input to buttons on calculator
-// Available: Numbers (0 - 9), Decimal (.)
 var calculator = document.getElementsByClassName("calculator")[0];
 calculator.addEventListener("keydown", function(event){
 	event.preventDefault();
+
+	// Numbers (0 - 9), Decimal (.)
 	if (event.keyCode >= 55 && event.keyCode <= 57) nums[event.keyCode - 55].click();
 	else if (event.keyCode >= 52 && event.keyCode <= 54) nums[event.keyCode - 49].click();
 	else if (event.keyCode >= 49 && event.keyCode <= 51) nums[event.keyCode - 43].click();
 	else if (event.keyCode == 48) nums[9].click();
 	else if (event.keyCode == 190) nums[10].click();
 
+	// Backspace (<-)
 	else if (event.keyCode == 8) corrections[1].click();
 
+	// States (Q, E, Enter)
 	else if (event.keyCode == 81) state[0].click();
 	else if (event.keyCode == 13 || event.keyCode == 69) state[1].click();
 
+	// Operations (W, A, S, D)
 	else if (event.keyCode == 68) ops[0].click();
 	else if (event.keyCode == 87) ops[1].click();
 	else if (event.keyCode == 83) ops[2].click();
