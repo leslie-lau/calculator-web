@@ -1,0 +1,72 @@
+.flex-grid{
+	display: flex;
+}
+.col{
+	flex: 1;
+}
+.container{
+	padding-top: 50px;
+}
+
+/* Calculator style elements */
+.calculator{
+	border: 2px solid rgb(200,200,200);
+	padding: 20px;
+	padding-top: 30px;
+}
+.result-text{
+	background-color: rgb(248,248,248);
+	color: rgb(140,70,180);
+	padding-left: 5px;
+	padding-right: 5px;
+	max-width: 202px;
+	height: 60px;
+	font-size: 2.2em;
+	text-align: right;
+}
+.controls{
+	border-radius: 5px;
+	color: rgb(120,50,150);
+	width: 50px;
+	height: 42px;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+.big-btn{
+	width: 104px;
+}
+.state:focus, .corrections:focus{
+	color: red;
+}
+.ops:focus{
+	color: rgb(50, 200, 100);
+}
+
+/* Shortcut style elements */
+.tutorial td{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#shortcut{
+	color: rgb(100,200,220);
+	font-size: 1.667em;
+	text-decoration: underline;
+}
+.info-btn{
+	opacity: 0.5;
+	width: 60px;
+	height: 55px;
+	border-radius: 10px;
+	border-color: rgb(100,220,220);
+	font-size: 1.667em;
+}
+.info-btn:hover{
+	opacity: 1.0;
+	background-color: rgb(100,220,240);
+	color: white;
+}
+#tooltip{
+	color: rgb(100,200,220);
+	font-size: 1.25em;
+}
+
